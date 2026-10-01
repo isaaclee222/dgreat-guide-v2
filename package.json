@@ -1,0 +1,11 @@
+{
+  "name": "dgreat-guide",
+  "version": "14.0.0",
+  "private": true,
+  "description": "dgreat.guide — Direct Strike counters, replays & academy. Static site, no build step.",
+  "scripts": {
+    "gen": "node scripts/generate-share.mjs",
+    "deploy:draft": "node scripts/generate-share.mjs && netlify deploy --dir=.",
+    "deploy": "node scripts/generate-share.mjs && netlify deploy --prod --dir=."
+  }
+}
